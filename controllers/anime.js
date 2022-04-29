@@ -18,7 +18,6 @@ exports.create = [
     .isLength({ min: 1 })
     .escape()
     .withMessage("First name must be specified.")
-    .isAlphanumeric()
     .withMessage("First name has non-alphanumeric characters."),
 
   body("author")
@@ -26,7 +25,6 @@ exports.create = [
     .isLength({ min: 1 })
     .escape()
     .withMessage("Last name must be specified.")
-    .isAlphanumeric()
     .withMessage("Last name has non-alphanumeric characters."),
 
   body("type")
@@ -145,7 +143,6 @@ exports.update = [
     .isLength({ min: 1 })
     .escape()
     .withMessage("First name must be specified.")
-    .isAlphanumeric()
     .withMessage("First name has non-alphanumeric characters."),
 
   body("author")
@@ -153,7 +150,6 @@ exports.update = [
     .isLength({ min: 1 })
     .escape()
     .withMessage("Last name must be specified.")
-    .isAlphanumeric()
     .withMessage("Last name has non-alphanumeric characters."),
 
   body("type")
